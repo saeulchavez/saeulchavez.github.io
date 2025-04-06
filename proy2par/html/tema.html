@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Repaso</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <style>
+            /* Reset completo de márgenes */
+            body, html {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              overflow-x: hidden; /* Importante para evitar scroll horizontal */
+            }
+            
+            /* Fuerza al footer a estar abajo */
+            body {
+              display: flex;
+              flex-direction: column;
+              min-height: 100vh;
+            }
+            
+            main {
+              flex: 1;
+            }
+            
+            /* Elimina cualquier padding/margin heredado */
+            .container-fluid.g-0 {
+              padding-left: 0 !important;
+              padding-right: 0 !important;
+            }
+          </style>
+    </head>
+      <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a id="inicio" class="navbar-brand" href="/proy2par/html/tema.html">Repaso Unidad 2</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/proy2par/html/temap2.html">Cuestionario</a>
+              </li>
+              <li class="nav-item">
+                <!--modal-->
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">
+    Contacta con Nosotros!!!
+  </button>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                    Temario
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="#tecnologias">Tecnologias</a></li>
+                  <li><a class="dropdown-item" href="#carrusel">Carrusel</a></li>
+                  <li><hr class="dropdown-divider"></li>
+                  <li><a class="dropdown-item" href="#videos">Videos recomendados</a></li>
+                </ul>
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+          </div>
+        </nav>
+<main>
+         <!-- Tabla de logs -->
+          <!--desarrollo de una web api y aplicaciones para nube-->
+  
+          <div class="container mt-4 mb-5">  <!-- Contenedor principal con márgenes -->
+            <div class="row justify-content-center">  <!-- Centrar la fila -->
+              <div class="col-12 col-lg-10">  <!-- Ancho ajustable -->
+                <h3 id="tecnologias" class="mb-4 text-center">Temas a tratar y sus puntos clave:</h3>
+                
+                <div class="table-responsive rounded shadow-sm">  <!-- Borde redondeado y sombra -->
+                  <table class="table table-striped table-bordered table-hover">  <!-- Mejoras visuales -->
+                    <thead class="table-dark">  <!-- Cabecera oscura -->
+                      <tr>
+                        <th class="p-3 align-middle">Tecnologías de Web APIs</th>
+                        <th class="p-3 align-middle">Microservicios</th>
+                        <th class="p-3 align-middle">Manejo de Contenedores</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td class="p-3 align-middle">1.- Interfaz para interactuar con el navegador y servicios web</td>
+                        <td class="p-3 align-middle">1.- Arquitectura descentralizada y modular</td>
+                        <td class="p-3 align-middle">1.- Aislamiento y portabilidad</td>
+                      </tr>
+                      <!-- Repite para las demás filas manteniendo las mismas clases -->
+                      <tr>
+                        <td class="p-3 align-middle">2.- Basadas en estándares abiertos (HTTP, JSON, XML)</td>
+                        <td class="p-3 align-middle">2.- Comunicación mediante APIs ligeras</td>
+                        <td class="p-3 align-middle">2.- Uso eficiente de recursos</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 align-middle">3.- Asincronía y eventos</td>
+                        <td class="p-3 align-middle">3.- Independencia tecnológica</td>
+                        <td class="p-3 align-middle">3.- Orquestación con Kubernetes (K8s)</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 align-middle">4.- Seguridad basada en políticas de origen (CORS y OAuth)</td>
+                        <td class="p-3 align-middle">4.- Escalabilidad granular</td>
+                        <td class="p-3 align-middle">4.- Ciclo de vida ágil (CI/CD)</td>
+                      </tr>
+                      <tr>
+                        <td class="p-3 align-middle">5.- Escalabilidad y arquitectura sin estado (RESTful)</td>
+                        <td class="p-3 align-middle">5.- Resiliencia y tolerancia a fallos</td>
+                        <td class="p-3 align-middle">5.- Seguridad y gestión de configuraciones</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+            </div>
+          </div>
+
+    <!-- Carousel -->
+<div id="demo" class="carousel slide" data-bs-ride="carousel">
+
+    <!-- Indicators/dots -->
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#demo" data-bs-slide-to="2"></button>
+      
+  
+    </div>
+    
+    <!-- The slideshow/carousel -->
+    <div id="carrusel" class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="/proy2par/imagenes/webapi.png" alt="web_apis" class="d-block w-70 mx-auto" style="max-height: 400px;">
+        </div>
+        <div class="carousel-item">
+          <img src="/proy2par/imagenes/microservicios.webp" alt="microservicios" class="d-block w-70 mx-auto" style="max-height: 200px;">
+        </div>
+        <div class="carousel-item">
+          <img src="/proy2par/imagenes/contenedores.jpg" alt="contenedores" class="d-block w-70 mx-auto" style="max-height: 200px;">
+        </div>
+      </div>
+
+      <!-- Reemplaza los controles predeterminados -->
+<a class="carousel-control-prev" href="#myCarousel" role="button">
+    <span class="fas fa-chevron-left fa-2x text-black" aria-hidden="true"></span>
+  </a>
+  <a class="carousel-control-next" href="#myCarousel" role="button">
+    <span class="fas fa-chevron-right fa-2x text-black" aria-hidden="true"></span>
+  </a>
+    
+    <!-- Left and right controls/icons -->
+    <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </button>
+  </div>
+
+  
+
+
+  <!-- Modal -->
+  <div class="modal fade" id="miModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <!-- Encabezado -->
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Si deseas saber más del tema:</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <!-- Cuerpo -->
+        <div class="modal-body">
+          <p>Numero de contacto: 449-468-20-40</p>
+        </div>
+        <!-- Pie (opcional) -->
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+          <button type="button" class="btn btn-primary">Guardar</button>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!--desarrollo de una web api y aplicaciones para nube-->
+   <!-- Contenedor principal -->
+   <div class="container mt-4">
+    <!-- Tarjetas de estado -->
+    <div class="row">
+        <h3 id="videos">Contenido recomendado:</h3>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+            <footer>
+                <iframe class="card-img-top" width="350" height="200" src="https://www.youtube.com/embed/u2Ms34GE14U?si=YQh7qJ3saE0Mtrd_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </footer>
+        <div class="card-body">
+            <h5 class="card-title">Desarrollo Web Api</h5>
+            <p class="card-text">
+              <i class="fas fa-circle text-success"></i> Estado del video: recomendado
+            </p>
+          </div>
+        </div>
+      </div>
+     
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <footer>
+            <iframe class="card-img-top" width="350" height="200" src="https://www.youtube.com/embed/gjRoNFopFig?si=w-sad4k7TauxmXkX" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </footer>
+            <div class="card-body">
+            <h5 class="card-title">Contenedores</h5>
+            <p class="card-text">
+              <i class="fas fa-circle text-warning"></i> Estado del video: revision
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <footer>
+            <iframe class="card-img-top" width="350" height="200" src="https://www.youtube.com/embed/2sFczigWppk?si=LtpTrlY7As3e5LWV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </footer>
+            <div class="card-body">
+            <h5 class="card-title">Microservicios</h5>
+            <p class="card-text">
+              <i class="fas fa-circle text-warning"></i> Estado del video: revision
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <footer>
+            <iframe class="card-img-top" width="350" height="200" src="https://www.youtube.com/embed/wegASHImFcs?si=HTuBGaF3pCswrfIf" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        </footer>
+            <div class="card-body">
+            <h5 class="card-title">Los inservibles</h5>
+            <p class="card-text">
+              <i class="fas fa-circle text-danger"></i>??????
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+          <footer>
+            <iframe class="card-img-top" width="350" height="200" src="https://www.youtube.com/embed/F5-U-__9zfA?si=XLEDotUESqGQGp6H" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </footer>
+            <div class="card-body">
+            <h5 class="card-title">Desarrollo apps nube</h5>
+            <p class="card-text">
+              <i class="fas fa-circle text-success"></i> Estado del video: recomendado
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  
+</main>
+<br></br>
+<footer class="navbar navbar-dark bg-dark p-0 m-0 w-100" style="position: relative; left: 0; right: 0;">
+    <div class="container-fluid g-0">
+      <div class="d-flex justify-content-between w-100 px-4 py-3">
+        <div class="d-flex align-items-center">
+          <a class="navbar-brand me-4" href="#inicio">Unidad 2</a>
+          <ul class="navbar-nav flex-row">
+            <li class="nav-item me-3">
+              <a class="nav-link" href="#inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+            </li>
+          </ul>
+        </div>
+        <span class="navbar-text">© 2025 - Todos los derechos</span>
+      </div>
+    </div>
+  </footer>
+       <!-- Bootstrap JS -->
+ <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  
+
+ 
+</body>
+</html>

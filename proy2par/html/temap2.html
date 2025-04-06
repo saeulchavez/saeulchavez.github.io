@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Repaso</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+        <!-- Font Awesome -->
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+        <style>
+            /* Reset completo de márgenes */
+            body, html {
+              margin: 0;
+              padding: 0;
+              width: 100%;
+              overflow-x: hidden; /* Importante para evitar scroll horizontal */
+            }
+            
+            /* Fuerza al footer a estar abajo */
+            body {
+              display: flex;
+              flex-direction: column;
+              min-height: 100vh;
+            }
+            
+            main {
+              flex: 1;
+            }
+            
+            /* Elimina cualquier padding/margin heredado */
+            .container-fluid.g-0 {
+              padding-left: 0 !important;
+              padding-right: 0 !important;
+            }
+          </style>
+    </head>
+      <body>
+        <!-- Navbar -->
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <div class="container-fluid">
+            <a id="inicio" class="navbar-brand" href="/proy2par/html/tema.html">Repaso Unidad 2</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div>
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/proy2par/html/tema.html">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="/proy2par/html/temap2.html">Cuestionario</a>
+              </li>
+              <li class="nav-item">
+                <!--modal-->
+ <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#miModal">
+    Contacta con Nosotros!!!
+  </button>
+              </li>
+    
+                
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+          </div>
+        </nav>
+
+        <main>
+            <div class="container mt-5">
+                <h2 class="text-center mb-4">Revisión de conocimientos</h2>
+                <form>
+                    <!-- Pregunta 1: Texto -->
+                    <div class="mb-3">
+                        <label class="form-label">1. Explica en que consiste el tema de microservicios:</label>
+                        <input type="text" class="form-control" name="uriDefinition" required>
+                    </div>
+            
+                    <!-- Pregunta 2: Múltiple respuesta -->
+                    <div class="mb-3">
+                        <label class="form-label">2. De los siguientes cual no es una caracteristica de una web API</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="webapi" value="asyev">
+                            <label class="form-check-label">Asincronia y eventos</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="webapi" value="interpinter">
+                            <label class="form-check-label">Interfaz para interactuar</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="webapi" value="aisyport">
+                            <label class="form-check-label">Aislamiento y portabilidad</label>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 3: Texto -->
+                    
+            
+                    <!-- Pregunta 4: Texto -->
+                   
+            
+                    <!-- Pregunta 5: Texto -->
+                    
+            
+                    <!-- Pregunta 6: Texto -->
+                    
+            
+                    <!-- Pregunta 7: Texto -->
+                    
+            
+                    <!-- Pregunta 8: Texto -->
+                   
+            
+                    <!-- Pregunta 9: Selección múltiple -->
+                    <div class="mb-3">
+                        <label class="form-label">3. Gusto personal</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="gusto" value="CSS">
+                            <label class="form-check-label">Usar CSS</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="gusto" value="Boobstrap">
+                            <label class="form-check-label">Usar Boobstrap</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="gusto" value="Style">
+                            <label class="form-check-label">Html con style</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" name="gusto" value="Nada">
+                            <label class="form-check-label">Solo Html, sin nada de estilo</label>
+                        </div>
+                        
+                    </div>
+            
+                    <!-- Pregunta 10: Texto -->
+                   
+            
+                    <!-- Pregunta 11: Verdadero/Falso -->
+                    <div class="mb-3">
+                        <label class="form-label">4. Los microservicios cuentan con resiliencia y tolerancia a fallos?</label>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cookieUsage" value="true">
+                            <label class="form-check-label">Verdadero</label>
+                        </div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="radio" name="cookieUsage" value="false">
+                            <label class="form-check-label">Falso</label>
+                        </div>
+                    </div>
+            
+                    <!-- Pregunta 12: Múltiple respuesta -->
+                  
+            
+                    <!-- Pregunta 13: Texto -->
+                    
+            
+                    <!-- Pregunta 14: Texto -->
+                   
+            
+                    <!-- Pregunta 15: Texto -->
+                 
+            
+                    <!-- Pregunta 16: Texto -->
+                    <div class="mb-3">
+                        <label class="form-label">5. Escribe tú nombre empezando con apellidos</label>
+                        <input type="text" class="form-control" name="nombre" required>
+                    </div>
+            
+                    <!-- Botón de envío -->
+                    <button type="submit" class="btn btn-primary">Enviar respuestas</button>
+                </form>
+            </div>
+            <!-- Contenedor principal -->
+   <div class="container mt-4">
+    <!-- Tarjetas de estado -->
+    <div class="row">
+        <h3 id="videos">Otros temas que te pueden gustar:</h3>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+            <footer>
+                <iframe class="card-img-top" width="350" height="200" src="https://www.youtube.com/embed/XXllX0A_9KQ?si=atoBqNiDHdQwU4qx" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </footer>
+        <div class="card-body">
+            <h5 class="card-title">Boobstrap</h5>
+            <p class="card-text">
+              <i class="fas fa-circle text-success"></i> Estado del video: recomendado
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4 mb-4">
+        <div class="card">
+            <footer>
+                <iframe class="card-img-top" width="350" height="200" src="https://www.youtube.com/embed/GNgo6vU7rfA?si=S2IvGuUwDoPBlIta" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </footer>
+        <div class="card-body">
+            <h5 class="card-title">#"3?!#</h5>
+            <p class="card-text">
+              <i class="fas fa-circle text-danger"></i> 35t4Do d3L vID30...
+            </p>
+          </div>
+        </div>
+       
+         
+
+      </div>
+
+    </div>
+            </main>
+            <br></br>
+            <footer class="navbar navbar-dark bg-dark p-0 m-0 w-100" style="position: relative; left: 0; right: 0;">
+                <div class="container-fluid g-0">
+                  <div class="d-flex justify-content-between w-100 px-4 py-3">
+                    <div class="d-flex align-items-center">
+                      <a class="navbar-brand me-4" href="https://www.youtube.com/embed/CDlz4GR7HAM?si=jQdR3CJ1scwZk1sQ">Unidad 2</a>
+                      <ul class="navbar-nav flex-row">
+                        <li class="nav-item me-3">
+                          <a class="nav-link" href="/proy2par/html/tema.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                        </li>
+                      </ul>
+                    </div>
+                    <span class="navbar-text">© 2025 - Todos los derechos</span>
+                  </div>
+                </div>
+                
+              </footer>
+                   <!-- Bootstrap JS -->
+             <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+              
+        </body>
+        </html>
